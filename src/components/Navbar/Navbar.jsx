@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import menuImage from "../../assets/6dots.png"; 
+import gmailimg from "../../assets/profile pic.png";
+import gpic from "../../assets/Google__G__logo.svg.webp";
+import plstore from "../../assets/google-play-store-new.png";
+import gmailicon from "../../assets/GmailIcon.png";
+import meeticon from "../../assets/meticon.png";
+import driveicon from "../../assets/driveimg.png";
+import contactsicon from "../../assets/contactsicon.png";
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -22,7 +29,7 @@ const Navbar = () => {
       />
  {/* Profile*/}
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
+        src={gmailimg}
         alt="Profile"
         className="profile-icon"
       />
@@ -30,27 +37,27 @@ const Navbar = () => {
       {isOpen && (
         <div className="dropdown">
           <div className="dropdown-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="search" />
+            <img src={gpic}  alt="search" />
             <p>Search</p>
           </div>
           <div className="dropdown-item">
-            <img src="https://img.icons8.com/fluent/600/google-play-store-new.png" alt="Play" />
+            <img src={plstore} alt="Play" />
             <p>Play</p>
           </div>
           <div className="dropdown-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" />
+            <img src={gmailicon} alt="Gmail" />
             <p>Gmail</p>
           </div>
           <div className="dropdown-item">
-            <img src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_2x_web_96dp.png" alt="Meet" />
+            <img src={meeticon} alt="Meet" />
             <p>Meet</p>
           </div>
           <div className="dropdown-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RaendkWxwbnlsA8UyDPmcDbqIMQETxKYpw&s" alt="Drive" />
+            <img src={driveicon} alt="Drive" />
             <p>News</p>
           </div>
           <div className="dropdown-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png" alt="Contacts" />
+            <img src={contactsicon} alt="Contacts" />
             <p>Contacts</p>
           </div>
         </div>

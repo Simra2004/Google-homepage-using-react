@@ -4,12 +4,12 @@
   }
   
   .logo {
-    width: 300px;
+    width: 200px;
   }
-
+  
   .search-box input {
     
-    width: 800px;
+    width: 500px;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #ccc;
